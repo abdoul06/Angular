@@ -1,0 +1,12 @@
+<input type="text" [(ngModel)]="searchResult">
+<br>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <app-course-item
+      *ngFor="let courseEl of courses |orderBy: 'name' | filter:searchResult:'name';"
+      [course]="courseEl"
+      [index]="courseEl.id"></app-course-item>
+  </div>
+</div>
+

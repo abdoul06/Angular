@@ -1,0 +1,30 @@
+<script>
+class Course {
+//can pass days in constructor
+    constructor(topic) {
+        this.topic = topic;
+	
+    }
+
+	set study(days){
+	   this.days = days;
+	}
+	
+	get study(){
+	   return this.days;
+	}
+    
+	static preReq() {
+        return `You must know HTML first.`;
+    }
+}
+
+// Instantiate an object from a class
+
+let course = new Course("Angular");
+course.study = 3;
+var days = course.study
+let prereq = Course.preReq();
+console.log(`You are in a ${days}-day ${course.topic} class. ${prereq}`);
+
+</script>
