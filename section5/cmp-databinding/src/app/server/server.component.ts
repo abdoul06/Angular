@@ -53,7 +53,7 @@ export class ServerComponent implements
 
   ngDoCheck() {
     console.log('NgDoCeck!');
-  }
+  } 
 
   ngAfterContentInit() {
     console.log('ngAfterContentinit');
