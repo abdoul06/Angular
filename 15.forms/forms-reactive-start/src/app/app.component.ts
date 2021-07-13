@@ -25,7 +25,7 @@ export class AppComponent  implements OnInit{
     //   (value) => console.log(value)
     // )
     this.signupForm.statusChanges.subscribe(
-      (status) => console.log(status)
+      (status) => console.log(status) 
     );
     this.signupForm.patchValue({
       'userData': {
