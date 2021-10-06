@@ -1,3 +1,4 @@
+
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
@@ -6,6 +7,7 @@ import { NgForm } from '@angular/forms';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   @ViewChild('f') signUpForm: NgForm;  
   defaultQuestion = 'pet';
@@ -38,6 +40,7 @@ export class AppComponent {
     });
   }
   onSubmit() {
+
     this.submitted = true; 
     this.user.username = this.signUpForm.value.userData.username;
     this.user.email = this.signUpForm.value.userData.email;
